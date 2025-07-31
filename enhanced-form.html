@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Sample HTML5 page with forms, tables, lists, and media using semantic structure and accessibility best practices." />
+  <meta name="author" content="Your Name" />
+  <title>HTML5 Basics</title>
+</head>
+<body>
+  <header>
+    <h1>Web Development Basics</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Lists</a></li>
+        <li><a href="#">Table</a></li>
+        <li><a href="#">Media</a></li>
+        <li><a href="#">Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="lists">
+      <h2>Lists</h2>
+
+      <article>
+        <h3>Unordered List</h3>
+        <ul type="circle">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Ordered List</h3>
+        <ol>
+          <li>Plan</li>
+          <li>Design</li>
+          <li>Develop</li>
+          <li>Deploy</li>
+        </ol>
+      </article>
+    </section>
+
+    <section id="table">
+      <h2>Table</h2>
+      <table border="1" aria-label="Sample Data Table">
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>Duration</th>
+            <th>Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Front End</td>
+            <td>3 weeks</td>
+            <td>Beginner</td>
+          </tr>
+          <tr>
+            <td>Back End</td>
+            <td>4 weeks</td>
+            <td>Intermediate</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="media">
+      <h2>Media</h2>
+      <article>
+        <h3>Image</h3>
+        <img src="../Week2/IMG/pexels-kqpho-1583582.jpg" alt="Placeholder image" width="400" height="200" />
+      </article>
+
+      <article>
+        <h3>Video</h3>
+        <video controls width="400">
+          <source src="../Week2/IMG/html-tables.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </article>
+    </section>
+
+    <section id="form">
+      <h2>Contact Form</h2>
+      <form action="#" method="POST" aria-label="Contact form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your Name" required autocomplete="name" />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your Email" required autocomplete="email" />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Create a Password" required minlength="6" />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="Male" required />
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female" />
+        <label for="female">Female</label>
+
+        <p>Skills Needed:</p>
+        <input type="checkbox" id="html" name="skills" value="HTML" />
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" name="skills" value="CSS" />
+        <label for="css">CSS</label>
+
+        <input type="checkbox" id="js" name="skills" value="JavaScript" />
+        <label for="js">JavaScript</label>
+
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" />
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" placeholder="Your message..." rows="4"></textarea>
+
+        <label for="readonly">User ID (readonly):</label>
+        <input type="text" id="readonly" name="userid" value="12345" readonly />
+
+        <br /><br />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 James Mayen. All rights reserved.</p>
+  </footer>
+</body>
+</html>
